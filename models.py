@@ -10,17 +10,11 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
-db = SQLAlchemy()#****
-bcrypt = Bcrypt()#work with routes in routes.py
 
-def connect_db(app):
-    """Connect this database to provided Flask app.
-    You should call this in your Flask app.
-    """
-    db.app = app
-    db.init_app(app)
-    # db.drop_all()
-    # db.create_all()
+bcrypt = Bcrypt()#work with routes in routes.py
+db = SQLAlchemy()#****
+
+
 
 class User(db.Model, UserMixin): #create column of User Model
 
@@ -49,3 +43,15 @@ class Post(db.Model):
 
     def __repr__(self): #how are object printed when we print out
         return f"Post('{self.title}','{self.date_posted}')"
+
+
+
+
+def connect_db(app):
+    """Connect this database to provided Flask app.
+    You should call this in your Flask app.
+    """
+    db.app = app
+    db.init_app(app)
+    # db.drop_all()
+    # db.create_all()
