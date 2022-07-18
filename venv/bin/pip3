@@ -1,4 +1,4 @@
-#!/Users/liyuanzhi/Desktop/SpringBoard/29capstone1/BlogPage-Flask/venv/bin/python3
+#!/Users/liyuanzhi/Desktop/SpringBoard/29capstone1/flaskblog/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

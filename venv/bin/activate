@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/liyuanzhi/Desktop/SpringBoard/29capstone1/BlogPage-Flask/venv"
+VIRTUAL_ENV="/Users/liyuanzhi/Desktop/SpringBoard/29capstone1/flaskblog/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
