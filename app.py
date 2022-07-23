@@ -1,3 +1,4 @@
+from crypt import methods
 import secrets
 import os
 from PIL import Image # pillow modular
@@ -239,6 +240,11 @@ def reset_token(token):
         flash('Your password has been updated! You are now able to log in', 'success')
         return redirect(url_for('login'))
     return render_template('reset_token.html', title='Reset Password', form=form)
+
+@app.route("/food", methods=['GET'])
+def food():
+    return render_template("food.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
