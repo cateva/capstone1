@@ -21,4 +21,4 @@ pycparser==2.21
 SQLAlchemy==1.4.39
 Werkzeug==2.1.2
 WTForms==3.0.1
-
+psycopg2
