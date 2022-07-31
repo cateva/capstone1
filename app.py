@@ -14,7 +14,7 @@ from flask_login import login_user, current_user, logout_user, login_required,Lo
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'hello')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///capstone1'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql:///capstone1')
 app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
